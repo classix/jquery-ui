@@ -504,9 +504,9 @@ $.Widget.prototype = {
 					} );
 
 				if ( !isTracked ) {
-					that._on( $( element ), {
+					that._on( true, $( element ), {
 						remove: "_untrackClassesElement"
-					} );
+				  } );
 				}
 			} );
 		}
